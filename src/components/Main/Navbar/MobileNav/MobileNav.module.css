@@ -1,0 +1,30 @@
+.MobileNav {
+  display: flex;
+  position: absolute;
+  right: 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 25px 15px;
+  margin-top: 55px
+}
+.MobileNav ul {
+  margin: 150px 0;
+}
+.MobileNav li {
+  list-style: none;
+  text-align: center;
+  margin: 15px auto 5px auto;
+}
+.HamburgerIcon  {
+  cursor: pointer;
+  position: absolute;
+  right: 17%;
+}
+.HamburgerIcon div {
+  width: 25px;
+  height: 2px;
+  background-color: #09725f;
+  margin: 6px 0;
+}
