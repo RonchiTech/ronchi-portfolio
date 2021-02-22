@@ -1,0 +1,12 @@
+.Main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.ImageContainer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+ 
+  margin-left: -125px; /* Half the width */
+}

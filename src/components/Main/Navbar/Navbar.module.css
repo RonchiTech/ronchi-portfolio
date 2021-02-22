@@ -1,0 +1,10 @@
+.Header {
+    margin-bottom: 220px
+}
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.Navbar ul {
+  display: flex;
+}
