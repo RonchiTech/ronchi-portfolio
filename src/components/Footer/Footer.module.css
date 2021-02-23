@@ -1,0 +1,25 @@
+.Footer {
+  background-color: #064b3f;
+  padding-top: 25px;
+  color: #cccccc;
+  height: 150px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.Socials  {
+width: 40%;
+margin: 0 auto;
+    
+}
+.Socials ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Socials img {
+    margin: 15px;
+  width: 30px;
+  height: 30px;
+}
