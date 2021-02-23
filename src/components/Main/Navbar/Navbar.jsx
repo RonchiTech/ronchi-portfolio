@@ -1,13 +1,28 @@
 import React, { useState } from 'react';
 import classes from './Navbar.module.css';
-import Backdrop from '../../../UI/Backdrop/Backdrop'
+import Backdrop from '../../../UI/Backdrop/Backdrop';
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const openSideBar = () => {
     setSidebar(!sidebar);
   };
   const closeSidebar = () => {
-      setSidebar(!sidebar);
+    setSidebar(!sidebar);
+  };
+  if (sidebar) {
+    document.body.style.height = '100vh';
+    document.body.style.overflowY = 'hidden';
+    document.body.style.paddingRight = '15px';
+
+    //     body {
+    //   height: 100vh;
+    //   overflow-y: hidden;
+    //   padding-right: 15px; /* Avoid width reflow */
+    // }
+  } else {
+    document.body.style.height = '0';
+    document.body.style.overflowY = 'scroll';
+    document.body.style.paddingRight = '0';
   }
   return (
     <header className={classes.Header}>
@@ -31,7 +46,7 @@ const Navbar = () => {
           <li>Contact</li>
         </ul>
       </nav>
-      <Backdrop show={sidebar} clicked={closeSidebar}/>
+      <Backdrop show={sidebar} clicked={closeSidebar} />
     </header>
   );
 };

@@ -5,10 +5,11 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  
+  position: relative;
   width: 90%;
+  top: -100px;
   max-width: 520px;
-  margin: -95px auto;
+  margin: -0 auto;
 }
 .Tech h2 {
   margin: 65px 0 45px 0;

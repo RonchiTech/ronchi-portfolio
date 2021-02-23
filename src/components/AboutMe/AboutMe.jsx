@@ -7,7 +7,9 @@ const aboutMe = () => {
       <p>
         I earned my bachelors degree in Information Technology{' '}
         <span>Specialized in Enterprise Networking</span> from the University of
-        the Immaculate Conception last March 2019. I&#8242;m currenty working as an IT Technician but recently I discovered that I have a passion in Web Development.
+        the Immaculate Conception last March 2019. I&#8242;m currenty working as
+        an IT Technician but recently I discovered that I have a passion in Web
+        Development.
       </p>
     </section>
   );
