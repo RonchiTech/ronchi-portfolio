@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Card.module.css';
-import GotoIcon from '../../assets/img/gotoicon.png'
+import GotoIcon from '../../assets/img/arrow.svg'
 const card = ({ title, description, site, blog, github, label, src }) => {
   let style = { color: '#000' };
   if (!site) {

@@ -35,6 +35,7 @@ const CardList = () => {
         title="Weather App"
         description="Web App not mine but I added background and Responsive Design"
         github="https://github.com/RonchiTech/weather-tutorial/tree/UIBranch"
+        label='Fork on Github'
       />
       <Card
         src={FishLogo}
