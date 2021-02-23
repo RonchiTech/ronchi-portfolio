@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Card.module.css';
-import GotoIcon from '../../assets/img/arrow.svg'
+import GotoIcon from '../../assets/img/arrow.svg';
 const card = ({ title, description, site, blog, github, label, src }) => {
   let style = { color: '#000' };
   if (!site) {
@@ -23,25 +23,22 @@ const card = ({ title, description, site, blog, github, label, src }) => {
       <h2>{title}</h2>
       <p>{description}</p>
       <ul>
-        <li>
-          <a href={blog} target="_blank" rel="noreferrer">
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href={github} target="_blank" rel="noreferrer">
-            Github
-          </a>
-        </li>
-      </ul>
-      <div>
-        <a style={style} href={site} target="_blank" rel="noreferrer">
-          {label || 
-          <div className={classes.GotoIcon}>
-            <img src={GotoIcon} alt='Go To Site' />
-            </div>}
+        <a href={blog} target="_blank" rel="noreferrer">
+          <li>Blog</li>
         </a>
-      </div>
+        <a href={github} target="_blank" rel="noreferrer">
+          <li>github</li>
+        </a>
+      </ul>
+      <a style={style} href={site} target="_blank" rel="noreferrer">
+        <div>
+          {label || (
+            <div className={classes.GotoIcon}>
+              <img src={GotoIcon} alt="Go To Site" />
+            </div>
+          )}
+        </div>
+      </a>
     </div>
   );
 };
