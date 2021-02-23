@@ -1,0 +1,22 @@
+.AboutMe {
+  background: #064b3f;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.AboutMe h2 {
+  text-align: center;
+  padding: 65px 5px 25px 5px;
+}
+.AboutMe p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  word-spacing: 2px;
+  line-height: 25px;
+    padding-bottom: 150px;
+}
+.AboutMe span {
+  font-style: italic;
+}

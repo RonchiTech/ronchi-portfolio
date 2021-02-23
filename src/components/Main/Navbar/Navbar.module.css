@@ -37,7 +37,9 @@
   margin: 6px 0;
   transition: 0.4s;
 }
-
+.change:hover {
+    cursor: pointer;
+}
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 5px);
   transform: rotate(-45deg) translate(-5px, 5px);

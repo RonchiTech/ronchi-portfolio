@@ -1,0 +1,33 @@
+.Tech {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  
+  width: 90%;
+  max-width: 520px;
+  margin: -95px auto;
+}
+.Tech h2 {
+  margin: 65px 0 45px 0;
+  color: #000;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.Tech ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.Tech img {
+  width: 40px;
+  height: 40px;
+}
+.Tech li {
+    list-style: none;
+  text-align: center;
+  margin: 0 10px;
+}
