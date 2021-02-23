@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Card.module.css';
-const card = ({ title, description, site, blog, github, label }) => {
+import GotoIcon from '../../assets/img/gotoicon.png'
+const card = ({ title, description, site, blog, github, label, src }) => {
   let style = { color: '#000' };
   if (!site) {
     style = {
@@ -10,6 +11,15 @@ const card = ({ title, description, site, blog, github, label }) => {
   }
   return (
     <div className={classes.Card}>
+      <div style={{ marginTop: '25px' }}>
+        {src && (
+          <img
+            src={src}
+            alt={title}
+            style={{ width: '35px', height: '35px' }}
+          />
+        )}
+      </div>
       <h2>{title}</h2>
       <p>{description}</p>
       <ul>
@@ -26,7 +36,10 @@ const card = ({ title, description, site, blog, github, label }) => {
       </ul>
       <div>
         <a style={style} href={site} target="_blank" rel="noreferrer">
-          {label || 'Check it'}
+          {label || 
+          <div className={classes.GotoIcon}>
+            <img src={GotoIcon} alt='Go To Site' />
+            </div>}
         </a>
       </div>
     </div>

@@ -29,8 +29,8 @@ const footer = () => {
           </li>
         </ul>
       </div>
-      <hr/>
-      <h3>Developed by Ronchi Floyd</h3>
+      <hr />
+      <h3>Developed by floydmiong@gmail.com</h3> 
     </footer>
   );
 };
