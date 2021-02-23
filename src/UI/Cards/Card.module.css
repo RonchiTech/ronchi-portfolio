@@ -4,8 +4,7 @@
     height: 300px;
     background-color: #84c08f;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+   
 }
 .Card h2 {
     padding-top: 55px;

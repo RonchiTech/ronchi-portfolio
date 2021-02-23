@@ -41,8 +41,7 @@ const Navbar = () => {
           <div className={classes.bar3}></div>
         </div>
         <ul>
-          <li>About Me</li>
-          <li>Portfolio</li>
+          <li>Blogs</li>
           <li>Contact</li>
         </ul>
       </nav>

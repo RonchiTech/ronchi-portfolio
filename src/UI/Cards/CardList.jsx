@@ -1,8 +1,9 @@
 import React from 'react';
 import Card from './Card';
+import classes from './CardList.module.css'
 const CardList = () => {
   return (
-    <>
+    <div className={classes.CardList}>
       <Card
         title="Todo App"
         description="Simple todo app"
@@ -32,7 +33,7 @@ const CardList = () => {
         github="https://github.com/RonchiTech/fishpili"
         label='In development'
       />
-    </>
+    </div>
   );
 };
 export default CardList;

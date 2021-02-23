@@ -5,8 +5,7 @@ const MobileNav = () => {
   return (
     <div className={classes.MobileNav}>
       <ul>
-        <li>About Me</li>
-        <li>Portfolio</li>
+        <li>Blogs</li>
         <li>Contact</li>
       </ul>
     </div>

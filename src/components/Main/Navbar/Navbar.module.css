@@ -13,10 +13,10 @@
   color: #09725f;
 }
 .Navbar ul {
-  display: flex;
   display: none;
   visibility: hidden;
 }
+
 .Navbar li {
   list-style: none;
   margin-right: 55px;
@@ -52,4 +52,13 @@
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -5);
   transform: rotate(45deg) translate(-8px, -5px);
+}
+@media screen and (min-width: 64rem) {
+  .Navbar ul {
+    display: flex;
+    visibility: visible;
+  }
+  .HamburgerIcon {
+    display: none;
+  }
 }

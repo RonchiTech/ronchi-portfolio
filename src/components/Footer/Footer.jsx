@@ -29,6 +29,8 @@ const footer = () => {
           </li>
         </ul>
       </div>
+      <hr/>
+      <h3>Developed by Ronchi Floyd</h3>
     </footer>
   );
 };
