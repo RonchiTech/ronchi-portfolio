@@ -2,17 +2,36 @@
   margin: 35px auto;
   width: 250px;
   height: auto;
-  background-color: #84c08f;
-  border-radius: 2px;
+  background-image: linear-gradient(
+    to left top,
+    #67b875,
+    #6dc37c,
+    #73ce83,
+    #7ada8a,
+    #80e591,
+    #7ceb9c,
+    #79f1a8,
+    #75f7b3,
+    #69f9c4,
+    #60fad5,
+    #5cfbe4,
+    #5ffbf1
+  );
+  /* background-color: #aff6cf;
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%); */
+  border-radius: 10px;
   padding-bottom: 25px;
 }
 .Card h2 {
   padding-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: 1.2rem;
 }
 .Card p {
   font-weight: 500;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 .Card ul {
   margin: 15px 0;
@@ -37,16 +56,15 @@
   width: 50px;
   height: 50px;
   margin: 0 auto;
-  padding:  10px 0;
+  padding: 10px 0;
   border: 2px solid black;
   border-radius: 50%;
-
 }
 .Card img {
   width: 30px;
   height: 20px;
 }
 .GotoIcon:hover {
-    background-color: #2baf45;
-    border: 2px solid #2baf45;
+  background-color: #2baf45;
+  border: 2px solid #2baf45;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './Card.module.css';
 import GotoIcon from '../../assets/img/arrow.svg';
+import GithubIcon from '../../assets/img/github-icon.svg';
+import BlogIcon from '../../assets/img/blog.svg';
 const card = ({ title, description, site, blog, github, label, src }) => {
   let style = { color: '#000' };
   if (!site) {
@@ -24,10 +26,18 @@ const card = ({ title, description, site, blog, github, label, src }) => {
       <p>{description}</p>
       <ul>
         <a href={blog} target="_blank" rel="noreferrer">
-          <li>Blog</li>
+          <img
+            src={BlogIcon}
+            alt="Blog"
+            style={{ marginTop: '12px', width: '30px', height: '30px' }}
+          />
         </a>
         <a href={github} target="_blank" rel="noreferrer">
-          <li>github</li>
+          <img
+            src={GithubIcon}
+            alt="Github"
+            style={{ marginTop: '12px', width: '30px', height: '30px' }}
+          />
         </a>
       </ul>
       <a style={style} href={site} target="_blank" rel="noreferrer">
