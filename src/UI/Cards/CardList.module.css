@@ -5,6 +5,6 @@
 @media screen and (min-width: 64rem) {
     .CardList {
     flex-direction: row;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 }

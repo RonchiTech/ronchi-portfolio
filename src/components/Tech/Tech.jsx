@@ -5,6 +5,7 @@ import CSS from '../../assets/img/css3.svg';
 import JS from '../../assets/img/logo-javascript.svg'
 import ReactLogo from '../../assets/img/react-2.svg';
 import ReduxLogo from '../../assets/img/redux.svg'
+import SassLogo from '../../assets/img/sass.svg'
 const tech = () => {
   return (
     <section className={classes.Tech}>
@@ -24,6 +25,9 @@ const tech = () => {
         </li>
         <li>
           <img src={ReduxLogo} alt="ReduxLogo" />
+        </li>
+        <li>
+          <img src={SassLogo} alt="SassLogo" />
         </li>
       </ul>
     </section>

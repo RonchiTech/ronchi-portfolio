@@ -1,15 +1,27 @@
 import React from 'react';
+import { projects } from '../../projects';
 import Card from './Card';
 import classes from './CardList.module.css';
-import TodoLogo from '../../assets/img/todoicon.svg';
-import MovieLogo from '../../assets/img/movie.svg'
-import CovidLogo from '../../assets/img/covid.svg'
-import WeatherLogo from '../../assets/img/weather.svg'
-import FishLogo from '../../assets/img/fish.svg'
+
+
+
 const CardList = () => {
+  console.log(projects);
   return (
     <div className={classes.CardList}>
-      <Card
+      {projects.map((prj) => {
+        return (
+          <Card
+            src={prj.src}
+            title={prj.title}
+            description={prj.description}
+            site={prj.site}
+            github={prj.github}
+            label={prj.label}
+          />
+        );
+      })}
+      {/* <Card
         src={TodoLogo}
         title="Todo App"
         description="Simple todo app"
@@ -20,22 +32,22 @@ const CardList = () => {
         src={MovieLogo}
         title="Movie Search App"
         description="Simple Movie Search App"
-        site="https://moviesearch-db80a.web.app/"
-        github="https://github.com/RonchiTech/moviesearchapp"
+        site="https://movie-search-app-1078b.web.app/"
+        github="https://github.com/RonchiTech/movie-search-app"
       />
       <Card
         src={CovidLogo}
         title="Covid-19 Track App"
         description="Gives you the latest total report and can search by Country"
-        site="https://covid-19-track-app-40f4c.web.app/"
-        github="https://github.com/RonchiTech/covid-track-app"
+        site="https://covid19-track-app.web.app/"
+        github="https://github.com/RonchiTech/Covid19-track-app"
       />
       <Card
         src={WeatherLogo}
         title="Weather App"
         description="Web App not mine but I added background and Responsive Design"
         github="https://github.com/RonchiTech/weather-tutorial/tree/UIBranch"
-        label='Fork on Github'
+        label="Fork on Github"
       />
       <Card
         src={FishLogo}
@@ -43,7 +55,7 @@ const CardList = () => {
         description="An online fish selling/buying app"
         github="https://github.com/RonchiTech/fishpili"
         label="In development"
-      />
+      /> */}
     </div>
   );
 };
